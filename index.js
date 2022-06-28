@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 //const { fs } = require('fs');
 //require('fs');
+const inquirer = require('inquirer');
 require('inquirer');
 
 // TODO: Create an array of questions for user input
@@ -35,10 +36,16 @@ const promptUser = () => {
         },
         {
             //table of contents to be added automatically
-            type: 'confiem',
+            type: 'confirm',
             name: 'confirmTableofContents',
             message: 'Would you like to generate a table of contents?',
             default: true
+        },
+        {
+            type: 'checkbox',
+            name: 'licenseOption',
+            message: 'Select a license (Check one)',
+            choices: ['MIT', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0', 'No license']
         },
         {
             type: 'input',
@@ -89,15 +96,8 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'projectBadges',
-            message: 'Enter Badges (Required)',
-            validate: nameInput => {
-                if (nameInput) {
-                    return true;
-                } else {
-                    console.log('Enter badges');
-                    return false;
-                }
-            }
+            message: 'Enter Badge code if needed',
+        
         },
         {
             type: 'input',
@@ -130,20 +130,23 @@ const promptUser = () => {
             name: 'projectTests',
             message: 'Enter any Tests for application',
         },
-    ])
-}
-
+    ]);
+};
+promptUser()
+.then(portfolioData => {
+    console.log(portfolioData);
+});
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
 // Function call to initialize app
-init();
-fs.writeFile('README.md', generatePage(fileName, data, err => {
-    if (err) throw err;
-    console.log(complete);
-}));
-const inquirer = require('inquirer');
-const generatePage = require('./utils/generateMarkdown.js');
+// init();
+// fs.writeFile('./utils/README.md', generatePage(fileName, data, err => {
+//     if (err) throw err;
+//     console.log(complete);
+// }));
+
+//const generatePage = require('./utils/generateMarkdown.js');
