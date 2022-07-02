@@ -63,6 +63,9 @@ ${pageData.usage}
 
 ${renderLicenseSection(pageData.license)}
 
+## Screenshot
+${pageData.screenshot}
+
 ## Contributing
 
 ${pageData.contribute}

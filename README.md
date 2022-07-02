@@ -1,9 +1,9 @@
-# README Generator
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+# README-GENERATOR
+  ![GitHub license](https://img.shields.io/badge/license-No license-blue.svg)
 
   ## Description
 
-This project is designed to generate a quality README using Node.js and the npm rRequire
+This project is designed to auto generate a quality README for github projects.  Using new functionality such node.js, npm inquirer, and ES6 syntax I was to create this project.  It was quite difficult, but in the end it worked out and I am happy to present my project.
 
 ## Table of Contents
 
@@ -24,31 +24,34 @@ This project is designed to generate a quality README using Node.js and the npm 
 To install necessary dependecies, run the following command:
 
 ```
-Install by cloning the repo then run using node index.js
+N/A
 ```
 
 ## Usage
 
-Use this generator everytime you create a new project to create a README file quickly
+This project will generate a README file through a series of questions and answers.  It will capture all necessary data, examples and screenshots.  The video of the functionality can be found at https://drive.google.com/file/d/1Sh22Whu2SnuoIYMSpZI5vOPcl-nli5iu/view.  
+
+### Screenshot
+![README File] (assets/Image.png)
 
 ## License
     
-    This project is licensed under the MIT license.
+    This project is licensed under the No license license.
 
 ## Contributing
 
-AMA
+Contributions are not accepted at this time
 
 ## Tests
 
 To run tests, run the following command:
 
 ```
-no tests at this time
+No tests
 ```
 
 ## Questions
 
-If you have any questions about the repo, open and issue or contact me directly at sample@email.com.
+If you have any questions about the repo, open and issue or contact me directly at mcsalazar122@gmail.com.
 You can find more of my work at [christys122](https://github.com/christys122/).
 
