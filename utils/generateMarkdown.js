@@ -8,7 +8,6 @@ function renderLicenseBadge(license) {
 }
 
 
-
 //  TODO: Create a function that returns the license link
 //  If there is no license, return an empty string
 function renderLicenseLink(license) {
@@ -28,23 +27,22 @@ function renderLicenseSection(license) {
   }
   return '';
 }
-// generateLicense(portfolioData, licenseOption)
-// generateLicenseLink(portfolioData, licenseOption)
+
 // TODO: Create a function to generate markdown for README
- function generateMarkdown(data) {
-  return `# ${data.title}
-  ${renderLicenseBadge(data.license)}
+ function generateMarkdown(pageData) {
+  return `# ${pageData.title}
+  ${renderLicenseBadge(pageData.license)}
 
   ## Description
 
-${data.description}
+${pageData.description}
 
 ## Table of Contents
 
 * [Installation](#installation)
 
 * [Usage](#usage)
-${renderLicenseLink(data.license)}
+${renderLicenseLink(pageData.license)}
 * [Contributing](#contributing)
 
 * [Tests](#tests)
@@ -56,39 +54,34 @@ ${renderLicenseLink(data.license)}
 To install necessary dependecies, run the following command:
 
 \`\`\`
-${data.installation}
+${pageData.installation}
 \`\`\`
 
 ## Usage
 
-${data.usage}
+${pageData.usage}
 
-${renderLicenseSection(data.license)}
+${renderLicenseSection(pageData.license)}
 
 ## Contributing
 
-${data.contribute}
+${pageData.contribute}
 
 ## Tests
 
 To run tests, run the following command:
 
 \`\`\`
-${data.test}
+${pageData.test}
 \`\`\`
 
 ## Questions
 
-If you have any questions about the repo, open and issue or contact me directly at ${data.email}.
-You can find more of my work at [${data.username}](https://github.com/${data.username}/).
+If you have any questions about the repo, open and issue or contact me directly at ${pageData.email}.
+You can find more of my work at [${pageData.username}](https://github.com/${pageData.username}/).
 
 `;
-  //   return `# ${projectTitle}`,
-//   `## ${projectDescription}`,
-//   `## ${licenseOption}`
-
-  
-
+ 
 
 };
 

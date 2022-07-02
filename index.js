@@ -5,13 +5,12 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 
-//require('fs'); above not in sample
 
-//require('inquirer');
 
 // TODO: Create an array of questions for user input
-// orig = const questions = [];
-const promptUser = [
+const questions = () => {
+//const promptUser = [
+    return inquirer.prompt([
     {
         type: 'input',
         name: 'username',
@@ -46,7 +45,7 @@ const promptUser = [
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log('Enter file name');
+                    console.log('Enter a title for your project');
                     return false;
                 }
             }
@@ -160,44 +159,29 @@ const promptUser = [
             message: 'What does the user need to know about using the repo? (Required)',
             
         },
-    ]
+    ]);
+};
 
+    
+    function writeToFile(fileName, data) {
+        fs.writeFile(fileName, data, err => {
+            if (err) {
+              return console.log(err);
+            }
+          
+            console.log("Success! Your README.md file has been generated")
+        });
+    };
+   
+    questions()
+    .then (pageData => {
+        const pageREADME = generateMarkdown(pageData);
+        fs.writeFile('./README.md', pageREADME, err => {
+          if (err) throw new Error(err);
+          return;
+        })
+        console.log('success');
+    });
 
-.then(data => {
-    const generateMarkdown = `${data}`
-      
-// promptUser()
-// .then(portfolioData => {
-//     const pageREADME = generatePage(portfolioData);
- fs.writeFile(generateMarkdown, pageREADME(data, null), err => {
-     if (err) throw new Error(err);
-    console.log('page created')
- });
-});
-
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-// .then (pageREADME => {
-//     return fs.writeFile(pageREADME);
-// })
-// .then(writeFileResponse => {
-//     console.log(writeFileResponse);
-//     return fs.copyFile();
-// })
-// .catch(err => {
-//     console.log(err);
-// });
-// TODO: Create a function to initialize app
-
-
-  //  function init() {
-// fs.writeFile('README.md', generatePage(portfolioData, data), err => {
-//     if (err) throw err;
-//     console.log(complete);
-
-// });
-
-//
-//Function call to initialize app
-//init();
+    
 
