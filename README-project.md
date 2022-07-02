@@ -35,7 +35,7 @@ Use this generator to create a README for all your projects!
 Video link: https://drive.google.com/file/d/1DWmz9YMtsIVvm9n7KoDdb9mqicXqCAfh/view
 
 Screenshot:
-![README file](https://user-images.githubusercontent.com/102922008/177018043-b1d34562-252f-4d6c-83ab-b48241e5633f.png)
+![README file](https://user-images.githubusercontent.com/102922008/177019067-156db5da-77d3-476c-87c9-13c77bdc32d5.png)
 
 
 
