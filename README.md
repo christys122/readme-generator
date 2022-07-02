@@ -1,9 +1,9 @@
-# f
-  ![GitHub license](https://img.shields.io/badge/license-Mozilla Public License 2.0-blue.svg)
+# README Generator
+  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
   ## Description
 
-d
+This project is designed to generate a quality README using Node.js and the npm rRequire
 
 ## Table of Contents
 
@@ -24,31 +24,31 @@ d
 To install necessary dependecies, run the following command:
 
 ```
-AMA
+Install by cloning the repo then run using node index.js
 ```
 
 ## Usage
 
-usage for blah
+Use this generator everytime you create a new project to create a README file quickly
 
 ## License
     
-    This project is licensed under the Mozilla Public License 2.0 license.
+    This project is licensed under the MIT license.
 
 ## Contributing
 
-s
+AMA
 
 ## Tests
 
 To run tests, run the following command:
 
 ```
-undefined
+no tests at this time
 ```
 
 ## Questions
 
-If you have any questions about the repo, open and issue or contact me directly at f.
-You can find more of my work at [n](https://github.com/n/).
+If you have any questions about the repo, open and issue or contact me directly at sample@email.com.
+You can find more of my work at [christys122](https://github.com/christys122/).
 

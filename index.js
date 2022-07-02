@@ -103,7 +103,7 @@ const questions = () => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log('Enter file name');
+                    console.log('please add a link to your screenshot');
                     return false;
                 }
             }
