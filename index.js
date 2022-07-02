@@ -5,8 +5,6 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 
-
-
 // TODO: Create an array of questions for user input
 const questions = () => {
 //const promptUser = [
@@ -63,15 +61,9 @@ const questions = () => {
                 }
             }
         },
+   
         {
-            //table of contents to be added automatically
-            type: 'confirm',
-            name: 'confirmTableofContents',
-            message: 'Would you like to generate a table of contents?',
-            default: true
-        },
-        {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'Select a license (Check one)',
             choices: ['MIT', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0', 'No license']
@@ -122,13 +114,6 @@ const questions = () => {
             message: 'Credits.. Please list collaborators, if any',
            
         },
-        //Badges? 
-        {
-            type: 'input',
-            name: 'badges',
-            message: 'Enter Badge code if needed',
-        
-        },
         {
             type: 'input',
             name: 'features',
@@ -145,7 +130,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'contribute',
-            message: 'Please describe how to contribute? (Required)',
+            message: 'Please describe how to contribute?',
        
         },
         {
@@ -156,7 +141,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'questions',
-            message: 'What does the user need to know about using the repo? (Required)',
+            message: 'What does the user need to know about using the repo?',
             
         },
     ]);

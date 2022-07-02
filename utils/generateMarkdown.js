@@ -72,7 +72,7 @@ ${pageData.contribute}
 To run tests, run the following command:
 
 \`\`\`
-${pageData.test}
+${pageData.tests}
 \`\`\`
 
 ## Questions

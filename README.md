@@ -1,9 +1,9 @@
-# minetitle
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+# f
+  ![GitHub license](https://img.shields.io/badge/license-Mozilla Public License 2.0-blue.svg)
 
   ## Description
 
-llalal
+d
 
 ## Table of Contents
 
@@ -24,16 +24,16 @@ llalal
 To install necessary dependecies, run the following command:
 
 ```
-ys
+AMA
 ```
 
 ## Usage
 
-ys
+usage for blah
 
 ## License
     
-    This project is licensed under the MIT license.
+    This project is licensed under the Mozilla Public License 2.0 license.
 
 ## Contributing
 
@@ -49,6 +49,6 @@ undefined
 
 ## Questions
 
-If you have any questions about the repo, open and issue or contact me directly at christ.
-You can find more of my work at [christy](https://github.com/christy/).
+If you have any questions about the repo, open and issue or contact me directly at f.
+You can find more of my work at [n](https://github.com/n/).
 
