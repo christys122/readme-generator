@@ -1,9 +1,9 @@
-# README-GENERATOR
-  ![GitHub license](https://img.shields.io/badge/license-No license-blue.svg)
+# README Generator
+  ![GitHub license](https://img.shields.io/badge/license-Mozilla Public License 2.0-blue.svg)
 
   ## Description
 
-This project is designed to auto generate a quality README for github projects.  Using new functionality such node.js, npm inquirer, and ES6 syntax I was to create this project.  It was quite difficult, but in the end it worked out and I am happy to present my project.
+This project is designed to showcase using node.js, npm and ES6 syntax to create a professional quality README file for projects
 
 ## Table of Contents
 
@@ -24,30 +24,30 @@ This project is designed to auto generate a quality README for github projects. 
 To install necessary dependecies, run the following command:
 
 ```
-N/A
+Clone repo and run node index.js from command line
 ```
 
 ## Usage
 
-This project will generate a README file through a series of questions and answers.  It will capture all necessary data, examples and screenshots.  The video of the functionality can be found at https://drive.google.com/file/d/1Sh22Whu2SnuoIYMSpZI5vOPcl-nli5iu/view.  
-
-### Screenshot
-![README File] (assets/Image.png)
+Use this generator to create a README for all your projects!
 
 ## License
     
-    This project is licensed under the No license license.
+    This project is licensed under the Mozilla Public License 2.0 license.
+
+## Screenshot
+![README file](https://user-images.githubusercontent.com/102922008/177018043-b1d34562-252f-4d6c-83ab-b48241e5633f.png)
 
 ## Contributing
 
-Contributions are not accepted at this time
+all accepted
 
 ## Tests
 
 To run tests, run the following command:
 
 ```
-No tests
+none
 ```
 
 ## Questions
